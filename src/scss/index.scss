@@ -6,6 +6,9 @@
 @import './fonts';
 @import './aside-panel';
 @import './burger-menu';
+@import './summary';
+@import './mixins.scss';
+@import './bar.scss';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -13,7 +16,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+
 }
+
 
 .container {
     max-width: 1140px;

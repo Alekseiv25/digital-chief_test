@@ -1,0 +1,96 @@
+.summary {
+    padding-top: 120px;
+
+    &__container {
+        padding: 60px 65px 0 65px;
+        display: flex;
+        gap: 135px;
+    }
+
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1000;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+
+    .item-summary {
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 68px;
+            background-color: #000;
+        }
+
+        &__header {
+            position: relative;
+            padding: 45px 0 0 100px;
+
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+
+        &__icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+
+        &__text {
+            padding-left: 43px;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+@import '../scss/variables.scss';
+@import '../scss/about.scss';
+@import '../scss/title.scss';
+@import './subtitle';
+@import './button';
+@import './fonts';
+@import './aside-panel';
+@import './burger-menu';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}

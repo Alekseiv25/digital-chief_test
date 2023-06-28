@@ -1,0 +1,20 @@
+{
+  "name": "digital-chief_test",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/html/index.html",
+  "scripts": {
+    "start": "parcel serve --open",
+    "build": "parcel build --public-url ./ --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "sass": "^1.54.9"
+  },
+  "dependencies": {
+  }
+}

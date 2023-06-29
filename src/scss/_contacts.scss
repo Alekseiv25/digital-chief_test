@@ -1,9 +1,17 @@
 .contacts {
     padding: 120px 0 90px 0;
 
+
     &__container {
         padding: 0 35px 0 52px;
         display: flex;
+    }
+
+    @media (max-width: 885px) {
+        &__container {
+            flex-direction: column;
+            padding: 0;
+        }
     }
 
     &__photo {
@@ -13,6 +21,12 @@
             max-width: 100%;
             height: auto;
             object-fit: cover;
+        }
+    }
+
+    @media (max-width: 885px) {
+        &__photo {
+            display: none
         }
     }
 
@@ -50,6 +64,12 @@
             display: flex;
             gap: 25px;
             position: relative;
+        }
+
+        @media (max-width: 885px) {
+            &__input-container {
+                flex-direction: column;
+            }
         }
 
         &__errors {
@@ -120,6 +140,18 @@
             font-size: 14px;
             line-height: 21px;
         }
+
+        @media (max-width: 415px) {
+            &__btn-container {
+                margin: 0 auto;
+            }
+        }
     }
 
+}
+
+@media (max-width: 855px) {
+    .contacts {
+        padding: 45px 0 90px 0;
+    }
 }

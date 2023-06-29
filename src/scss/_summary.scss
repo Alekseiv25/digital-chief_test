@@ -7,6 +7,14 @@
         gap: 135px;
     }
 
+    @media (max-width: 1320px) {
+        &__container {
+            flex-direction: column;
+            gap: 40px;
+            padding: 0;
+        }
+    }
+
     &__column {
         &-title {
             position: relative;

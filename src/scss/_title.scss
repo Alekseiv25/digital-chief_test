@@ -26,6 +26,13 @@
         font-size: 48px;
     }
 
+    @media (max-width: 415px) {
+        &_size48 {
+            font-size: 26px;
+            line-height: normal;
+        }
+    }
+
     &_circle {
         position: relative;
         text-align: center;

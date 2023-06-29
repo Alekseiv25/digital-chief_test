@@ -7,8 +7,14 @@
     padding-top: 205px;
 
     &__title {
-        width: 535px;
+        max-width: 535px;
         margin-top: 10px;
+    }
+    @media (max-width: 415px) {
+        &_title {
+            font-size: 26px;
+            line-height: normal;
+        }
     }
 
     &__subtitle {
@@ -34,5 +40,11 @@
             color: #000;
             text-decoration: none;
         }
+    }
+}
+
+@media (max-width: 415px) {
+    .about {
+        background: url('../assets/images/background.jpg') no-repeat 60%/cover;
     }
 }
